@@ -36,7 +36,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "what license did you use for this project ?",
-        choices: ["MIT", "APACHE", "NONE"]
+        choices: ["MIT License", "APACHE", "NONE"]
     }, {
         type: "input",
         name: "questions",
@@ -77,7 +77,7 @@ function init() {
 ## Usage \n- ${answers.usage}
 ## Contributions \n- ${answers.contributions}
 ## Tests \n- ${answers.tests}
-## License \n- ${answers.license}
+## License \n- ${answers.license}\n- see the LICENSE file for details.
 ## Questions \n - GitHub:${answers.questions} Email:${answers.email}`
             
 
