@@ -56,7 +56,18 @@ function init() {
             console.log("THE ANSWERS!!!! ", answers);
             console.log("This is title ", answers.title)
 
-            var template = `# ${answers.title}\n## Decsption \n${answers.description}\n## Installation \n${answers.installation}\n## Usage \n${answers.usage}\n## Contributions \n${answers.contributions}\n## Tests \n${answers.tests}\n## License \n${answers.license}`
+            var template = `# ${answers.title}\n## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)\n## Decsption \n${answers.description}
+## Installation \n${answers.installation}
+## Usage \n${answers.usage}
+## Contributions \n${answers.contributions}
+## Tests \n${answers.tests}
+## License \n${answers.license}`
             
 
             writeToFile(template);
