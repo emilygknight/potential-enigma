@@ -37,6 +37,14 @@ const questions = [
         name: "license",
         message: "what license did you use for this project ?",
         choices: ["MIT", "APACHE", "NONE"]
+    }, {
+        type: "input",
+        name: "questions",
+        message: "Enter Your GitHub Username Here"
+    }, {
+        type: "input",
+        name: "email",
+        message: "Enter your Email Here"
     }
 ];
 
@@ -61,13 +69,16 @@ function init() {
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Tests](#tests)
 - [License](#license)
-- [Contact](#contact)\n## Decsption \n${answers.description}
-## Installation \n${answers.installation}
-## Usage \n${answers.usage}
-## Contributions \n${answers.contributions}
-## Tests \n${answers.tests}
-## License \n${answers.license}`
+- [Questions](#questions)
+## Decsption \n- ${answers.description}
+## Installation \n- ${answers.installation}
+## Usage \n- ${answers.usage}
+## Contributions \n- ${answers.contributions}
+## Tests \n- ${answers.tests}
+## License \n- ${answers.license}
+## Questions \n - GitHub:${answers.questions} Email:${answers.email}`
             
 
             writeToFile(template);
