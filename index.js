@@ -41,9 +41,11 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(data) {
+function writeToFile(answers) {
 
-    fs.writeFile("READE.md", data)
+    fs.writeFile('README.md', answers, (err) =>
+    err ? console.log(err) : console.log('Successfully created readme!')
+  );
 
 }
 
