@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   if (license === "MIT") {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-  } else if (license === "Apache 2.0") {
+  } else if (license === "APACHE") {
     return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
   } else if (license === "GNU GPLv3") {
     return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
@@ -17,7 +17,7 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license === "MIT") {
     return "https://opensource.org/licenses/MIT";
-  } else if (license === "Apache 2.0") {
+  } else if (license === "APACHE") {
     return "https://opensource.org/licenses/Apache-2.0";
   } else if (license === "GNU GPLv3") {
     return "https://www.gnu.org/licenses/gpl-3.0";
@@ -29,11 +29,11 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  const licenseBadge = getLicenseBadge(license);
-  const licenseLink = getLicenseLink(license);
+  const licenseBadge = renderLicenseBadge(license);
+  const licenseLink = renderLicenseLink(license);
 
   if (licenseBadge && licenseLink) {
-    return `## License\n\nThis project is licensed under the [${license}](${licenseLink}) license. ${licenseBadge}`;
+    return `## License\n- This project is licensed under the [${license}](${licenseLink}) license. ${licenseBadge}`;
   } else {
     return "";
   }

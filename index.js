@@ -36,7 +36,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "what license did you use for this project ?",
-        choices: ["MIT License", "APACHE", "GNU GPLv3"]
+        choices: ["MIT", "APACHE", "GNU GPLv3"]
     }, {
         type: "input",
         name: "questions",
@@ -77,10 +77,10 @@ function init() {
 ## Usage \n- ${answers.usage}
 ## Contributions \n- ${answers.contributions}
 ## Tests \n- ${answers.tests}
-## License \n- ${answers.license}\n- [LICENSE](readme-generator/LICENSE).
+\n${generateLicense.renderLicenseSection(answers.license)}\n
 ## Questions \n- GitHub: https://github.com/${answers.questions}\n- Email: ${answers.email}`
             
-
+           
             writeToFile(template);
 
         })
