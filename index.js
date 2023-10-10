@@ -1,9 +1,9 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require("fs") // this si alibrary that deals with creating files or editing files etc..
+const generateLicense = require('./utils/generateMarkdown.js');
 
-
-
+// console.log(generateLicense.renderLicenseBadge);
 
 
 // TODO: Create an array of questions for user input
@@ -36,7 +36,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "what license did you use for this project ?",
-        choices: ["MIT License", "APACHE", "NONE"]
+        choices: ["MIT License", "APACHE", "GNU GPLv3"]
     }, {
         type: "input",
         name: "questions",
