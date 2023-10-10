@@ -35,7 +35,7 @@ const questions = [
     }, {
         type: "list",
         name: "license",
-        message: "what license did you use for this project ?",
+        message: "What license did you use for this project?",
         choices: ["MIT", "APACHE", "GNU GPLv3"]
     }, {
         type: "input",

@@ -1,4 +1,4 @@
-# ReadMe Generator
+# ReadMe Generator - this README is for application use, not the one you will create
 
 ## Table of Contents
 
