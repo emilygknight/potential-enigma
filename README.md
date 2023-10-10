@@ -22,7 +22,7 @@
 
 ## Usage
 
-- You can use this app to create a README.md file.
+- You can use this app to create a README.md file
 
 ## Screenshots
 
