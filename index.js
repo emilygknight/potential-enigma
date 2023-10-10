@@ -78,7 +78,7 @@ function init() {
 ## Contributions \n- ${answers.contributions}
 ## Tests \n- ${answers.tests}
 ## License \n- ${answers.license}\n- [LICENSE](readme-generator/LICENSE).
-## Questions \n - GitHub: ${answers.questions} Email: ${answers.email}`
+## Questions \n - GitHub: https://github.com/${answers.questions} Email: ${answers.email}`
             
 
             writeToFile(template);

@@ -19,6 +19,6 @@
 - o
 ## License 
 - MIT License
-- Link: [LICENSE](readme-generator/LICENSE).
+- [LICENSE](readme-generator/LICENSE).
 ## Questions 
- - GitHub: emily Email: emily
+ - GitHub: https://github.com/emily Email: emily
