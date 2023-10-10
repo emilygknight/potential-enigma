@@ -77,7 +77,7 @@ function init() {
 ## Usage \n- ${answers.usage}
 ## Contributions \n- ${answers.contributions}
 ## Tests \n- ${answers.tests}
-## License \n- ${answers.license}\n- see the LICENSE file for details.
+## License \n- ${answers.license}\n- [LICENSE](readme-generator/LICENSE).
 ## Questions \n - GitHub:${answers.questions} Email:${answers.email}`
             
 
